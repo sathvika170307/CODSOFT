@@ -1,0 +1,180 @@
+<html>
+    <head>
+    <title>Landing Page</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        
+        header {
+            background: linear-gradient(to right, #ff6600, #ff3399);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .hero {
+            background: url('https://img.freepik.com/free-photo/young-happy-smiling-businesswoman-holding-laptop-isolated_231208-241.jpg?t=st=1737379872~exp=1737383472~hmac=88ced69afedc575b8c2ad54f8eecbba10f419213aec4d90ab49284c0c7d69f2d&w=740') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #cc5200;
+        }
+
+        
+        .about {
+            background: #f9f9f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+        }
+
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #ff6600, #ff3399);
+            color: white;
+        }
+
+        .service {
+            text-align: center;
+            width: 30%;
+        }
+
+        .service img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .service h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 14px;
+        }
+
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Landing Page</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>We Are Creative</h1>
+        <p>CREATIVE DIGITAL AGENCY</p>
+        <button>Contact Us</button>
+    </div>
+
+    
+    <div class="about">
+        <h2>About Us</h2>
+        <p>15 years, we are passionate about achieving better results for our clients. We provide innovative solutions for businesses to grow and excel in their respective industries.</p>
+        <img src="https://media.istockphoto.com/id/1485939448/photo/data-processing-digital-technology-software-development-concept-computer-programmer-software.jpg?s=612x612&w=0&k=20&c=AMaqBgU79i_uPbJmGzoO9b_RoLwYpGwCaJsnTAsNPaY=" alt="Team Image">
+    </div>
+
+    
+    <div class="services">
+        <div class="service">
+            <img src="https://t4.ftcdn.net/jpg/08/80/34/77/360_F_880347778_DcGYIj1npJOucfunRX6VUj7Hr1sgrrao.jpg" alt="Service 1">
+            <h3>User Experience</h3>
+            <p>Delivering engaging and seamless user experiences.</p>
+        </div>
+        <div class="service">
+            <img src="https://media.istockphoto.com/id/1149529035/photo/this-looks-interesting.jpg?s=1024x1024&w=is&k=20&c=MpRPPpgNCmmPHPWWSlIBPrcH7VZygmyUkmRqL6cui24=" alt="Service 2">
+            <h3>Creative Design</h3>
+            <p>Crafting visually stunning and functional designs.</p>
+        </div>
+        <div class="service">
+            <img src="https://media.istockphoto.com/id/1407983911/photo/forex-diagrams-and-stock-market-rising-lines-with-numbers.jpg?s=1024x1024&w=is&k=20&c=Cjl0_Fm2wDOQy7vuFOcDgvssIgUZ02MvIspWA4_GO_s=" alt="Service 3">
+            <h3>Retina Ready</h3>
+            <p>Ensuring high-quality visuals for all devices.</p>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2025 Landing Page. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

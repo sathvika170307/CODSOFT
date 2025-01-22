@@ -1,0 +1,148 @@
+<html>
+<head>
+    <link rel="icon" href="https://wallpapers.com/images/hd/calculator-digital-art-outline-tl2qqmc5v2bkyc1d.jpg" type="image/png" />
+    <title>Basic Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .calculator {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            gap: 10px;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+        }
+        .display {
+            height: 50px;
+            background-color: #222;
+            color: #fff;
+            font-size: 24px;
+            padding: 10px;
+            text-align: right;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .button {
+            padding: 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #ddd;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #bbb;
+        }
+        .button.operator {
+            background-color: #f9a825;
+            color: #fff;
+        }
+        .button.operator:hover {
+            background-color: #f57c00;
+        }
+    </style>
+</head>
+<body>
+ <center><h1> Calculator </h1></center>
+    <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <button class="button" onclick="appendNumber('7')">7</button>
+            <button class="button" onclick="appendNumber('8')">8</button>
+            <button class="button" onclick="appendNumber('9')">9</button>
+            <button class="button operator" onclick="chooseOperator('/')">&divide;</button>
+            
+            <button class="button" onclick="appendNumber('4')">4</button>
+            <button class="button" onclick="appendNumber('5')">5</button>
+            <button class="button" onclick="appendNumber('6')">6</button>
+            <button class="button operator" onclick="chooseOperator('*')">&times;</button>
+            
+            <button class="button" onclick="appendNumber('1')">1</button>
+            <button class="button" onclick="appendNumber('2')">2</button>
+            <button class="button" onclick="appendNumber('3')">3</button>
+            <button class="button operator" onclick="chooseOperator('-')">&minus;</button>
+            
+            <button class="button" onclick="appendNumber('0')">0</button>
+            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="calculateResult()">=</button>
+            <button class="button operator" onclick="chooseOperator('+')">+</button>
+        </div>
+    </div>
+
+    <script>
+        let currentInput = '';
+        let operator = null;
+        let previousInput = '';
+
+        function appendNumber(number) {
+            currentInput += number;
+            updateDisplay();
+        }
+
+        function chooseOperator(op) {
+            if (currentInput === '') 
+		return;
+            if (previousInput !== '')	
+		 calculateResult();
+            operator = op;
+            previousInput = currentInput;
+            currentInput = '';
+        }
+
+        function calculateResult() {
+            if (operator === null || currentInput === '') return;
+            const num1 = parseFloat(previousInput);
+            const num2 = parseFloat(currentInput);
+            let result;
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = num1 / num2;
+                    break;
+                default:
+                    return;
+            }
+            currentInput = result.toString();
+            operator = null;
+            previousInput = '';
+            updateDisplay();
+        }
+
+        function clearDisplay() {
+            currentInput = '';
+            operator = null;
+            previousInput = '';
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            document.getElementById('display').innerText = currentInput;
+        }
+    </script>
+</body>
+</html>
+

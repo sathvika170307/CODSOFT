@@ -1,0 +1,197 @@
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background: #f9f9f9;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #333;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .hero-buttons a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background: #007bff;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero-buttons a:hover {
+            background: #0056b3;
+        }
+
+        .hero-image img {
+            width: 400px;
+            height: auto;
+        }
+
+        
+        .about {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        
+        .skills {
+            padding: 40px 20px;
+            background: #f1f1f1;
+            text-align: center;
+        }
+
+        .skills h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skills-list div {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+
+        
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #333;
+            color: white;
+        }
+	body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffe6e6; /* Pale pink background */
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Sathvika's Portfolio</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+   
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Sathvika 👋</h1>
+            <p>A passionate to work on the bases of Full Stack Software Developer 🚀 experienced in building web and mobile applications using JavaScript, HTML, CSS and other cool frameworks.</p>
+            <div class="hero-buttons">
+                <a href="#">Contact Me</a>
+                <a href="#">See My Resume</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://cdn.gamma.app/70amqqv2ip2wq8k/generated-images/rJF_MPp1oXtTGD4T3jOKo.jpg" alt="Sathvika at work">
+        </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated developer with a strong foundation in designing and implementing efficient software solutions. My focus is on building user-friendly applications that deliver results.</p>
+    </section>
+
+    
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div>JavaScript</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2025 Sathvika's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
